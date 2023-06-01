@@ -1,4 +1,6 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 .App {
   text-align: center;
 }
@@ -8,4 +10,65 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color:  hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  height: 50%;
+  width: 80%;
+  
+}
+.biocontainer{
+  text-align: left;
+ 
+ 
+
+}
+.bio{
+  color: rgb(192, 230, 247);
+  padding: 1rem;
+  width: 50%;
+  height: 100%;
+border-radius: 1rem;
+background-color: hsl(246, 80%, 60%);
+position: relative;
+z-index: 2;
+margin-bottom: -1rem;
+}
+span{
+  font-size: 0.7rem;
+  
+}
+
+h1{
+  font-weight: 300;
+  color: white;
+  font-size: 1.4rem;
+}
+.list{
+  width: 50%;
+  height: 30%;
+  border-radius: 1rem;
+background-color: hsl(246, 80%, 60%);
+padding: 0.5rem;
+background-color: hsl(235, 46%, 20%);
+
+}
+
+ul{
+text-align: left;
+margin-left: -2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: left;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+ font-size: 0.7rem;
+ color:  rgb(192, 230, 247);
+ margin-bottom: 0.4rem;
+
 }
