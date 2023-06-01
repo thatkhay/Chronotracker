@@ -1,2 +1,0 @@
-# Chronotracker
-Time tracking dashboard
