@@ -6,9 +6,9 @@ import  Mypage  from './pages/Mypage';
 function App() {
   return (
     <div className="App">
-      <body>
+    
       <Mypage />
-      </body>
+      
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Card from '../component/Card'
 import Myimg from '../img/image-jeremy.png'
 import Topcard from '../component/Topcard'
 import Workicon from '../img/icon-work.svg'
+
 function Mypage() {
   return (
     <div className='container'>
