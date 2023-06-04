@@ -20,12 +20,12 @@ function Mypage() {
     </div>
     </div>
     <div className='mainBoxContainer'>
-   <Card text='23hrs' color='blue' />
-   <Card text='50hrs' color='red' />
-   <Card text='60hrs' color='violet' />
-   <Card text='10hrs' color='green' />
-   <Card text='14hrs' color='brown' />
-   <Card text='14hrs' color='pink' />
+   <Card text='32hrs' color='blue' />
+   <Card text='10hrs' color='red' />
+   <Card text='4hrs' color='violet' />
+   <Card text='4hrs' color='green' />
+   <Card text='5hrs' color='brown' />
+   <Card text='2hrs' color='pink' />
    </div>
     </div>
   )
