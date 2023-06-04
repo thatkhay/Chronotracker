@@ -9,7 +9,7 @@ function Mypage() {
     <div className='bio' > 
     <img className='img' src={Myimg} alt='bio-img'/> 
     <span className='span'>Report for</span>
-    <h1>Jeremy Robson</h1>
+    <h1 className='name'>Jeremy Robson</h1>
     </div>
     <div className='list'>
       <ul>
@@ -20,7 +20,7 @@ function Mypage() {
     </div>
     </div>
     <div className='mainBoxContainer'>
-   <Card text='32hrs' color='blue' />
+   <Card  text='32hrs' color='blue' />
    <Card text='10hrs' color='red' />
    <Card text='4hrs' color='violet' />
    <Card text='4hrs' color='green' />

@@ -13,7 +13,7 @@ function Card({text, color}) {
                 
             </div>
             <div className='timeDateDiv'>
-                    <h1>{text}</h1>
+                    <h1 className='nums'>{text}</h1>
                     <span className='bottomTimeSpan'></span>
                 </div>
         </div>
