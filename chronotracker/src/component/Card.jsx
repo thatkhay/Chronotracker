@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Card({text, color}) {
+function Card({text}) {
   return (
     <div>
         <div className='boxContainer' style={{ 
-            backgroundColor: color
+            backgroundColor: 'hsl(235, 46%, 20%)'
             
         }}>
             <div className='top'>

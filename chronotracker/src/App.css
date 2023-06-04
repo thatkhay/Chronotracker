@@ -87,7 +87,9 @@ li{
   width: 7rem;
   border-radius: 1rem;
   padding: 1rem;
-  
+  position: relative;
+  z-index: 1;
+  margin-top: -2rem;
 }
 .top{
   display: flex;
@@ -113,4 +115,25 @@ li{
 .nums{
   color: white;
   font-weight: 300;
+}
+
+.topIconDiv{
+  height: 3.4rem;
+  width: 9rem;
+  border-radius: 1rem;
+}
+.innerBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.iconImg{
+ height: 7rem;
+}
+.titleSpan{
+  font-weight: 500;
+  color: white;
+  font-size: 0.7rem;
 }
