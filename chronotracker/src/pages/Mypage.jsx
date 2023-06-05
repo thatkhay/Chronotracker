@@ -15,9 +15,9 @@ function Mypage() {
     </div>
     <div className='list'>
       <ul>
-        <li className='daily'>daily</li>
-        <li className='weekly'>weekly</li>
-        <li className='monthly'>monthly</li>
+        <li className='daily' >daily</li>
+        <li className='weekly' >weekly</li>
+        <li className='monthly' >monthly</li>
       </ul>
     </div>
     </div>

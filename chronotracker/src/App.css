@@ -83,7 +83,7 @@ li{
 
 .boxContainer{
   background-color: rgb(40, 38, 131);
-  height: 5rem;
+  height: 6rem;
   width: 7rem;
   border-radius: 1rem;
   padding: 1rem;
@@ -117,21 +117,30 @@ li{
   font-weight: 300;
 }
 
+.lastSpanDiv{
+margin-top: -1rem;
+font-size: 0.7rem;
+margin-left: -2rem;
+color:  hsl(235, 71%, 74%);
+}
+
 .topIconDiv{
   height: 3.4rem;
   width: 9rem;
   border-radius: 1rem;
 }
+
 .innerBox{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
+
 .iconImg{
  height: 7rem;
 }
+
 .titleSpan{
   font-weight: 500;
   color: white;

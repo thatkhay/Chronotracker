@@ -1,6 +1,7 @@
 import React from 'react'
-
 function Card({text}) {
+ 
+
   return (
     <div>
         <div className='boxContainer' style={{ 
@@ -14,7 +15,12 @@ function Card({text}) {
             </div>
             <div className='timeDateDiv'>
                     <h1 className='nums'>{text}</h1>
-                    <span className='bottomTimeSpan'></span>
+                    
+                </div>
+            <div className='lastSpanDiv'>
+                  <span className='bottomTimeSpan'>Last week</span>
+                  <span className='bottomTimeSpan'>-</span>
+                    <span className='bottomTimeSpan'>4hrs</span>
                 </div>
         </div>
     </div>
