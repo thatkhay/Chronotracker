@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from '../component/Card'
 import Myimg from '../img/image-jeremy.png'
 import Topcard from '../component/Topcard'
 import Workicon from '../img/icon-work.svg'
+import Data from '../component/data.json'
 
 function Mypage() {
+  const [action, setAction] = useState('')
+const [data, setData] = useState([])
+useEffect(() => {
+  const colors = ['hsl(15, 100%, 70%)','hsl(195, 74%, 62%)','hsl(348, 100%, 68%)','hsl(145, 58%, 55%)','hsl(264, 64%, 52%)','hsl(43, 84%, 65%)']
+  const newData = colors.map((item) => {
+
+    data.map((color) => item.color = color)
+  return item
+  }) 
+  setData(newData)
+}, [])
+
+const handleClick = (e) => {
+setAction(e.target.innerText);
+console.log(data);
+}
+console.log(action);
   return (
     <div className='container'>
     <div className='biocontainer'>
@@ -15,37 +33,22 @@ function Mypage() {
     </div>
     <div className='list'>
       <ul>
-        <li className='daily' >daily</li>
-        <li className='weekly' >weekly</li>
-        <li className='monthly' >monthly</li>
+        <li className='daily' onClick={handleClick}>daily</li>
+        <li className='weekly' onClick={handleClick}>weekly</li>
+        <li className='monthly' onClick={handleClick}>monthly</li>
       </ul>
     </div>
     </div>
     <div className='mainBoxContainer'>
-    <div className='innerBox'>
-    <Topcard color='hsl(15, 100%, 70%)' />
-   <Card  text='32hrs' color='blue' />
+    
+  {
+    data.map ((item, id) =>(
+      <div key={id} className='innerBox'>
+    <Topcard color={item.color} />
+   <Card  item={item}  action={action} />
    </div>
-   <div className='innerBox'>
-    <Topcard color='hsl(195, 74%, 62%)' src={Workicon} />
-   <Card text='10hrs' color='red' />
-   </div>
-   <div className='innerBox'>
-    <Topcard color='hsl(348, 100%, 68%)' />
-   <Card text='4hrs' color='violet' />
-   </div>
-   <div className='innerBox' >
-    <Topcard color='hsl(145, 58%, 55%)' />
-   <Card text='4hrs' color='green' />
-   </div>
-   <div className='innerBox'>
-    <Topcard color='hsl(264, 64%, 52%)' />
-   <Card text='5hrs' color='brown' />
-   </div>
-   <div className='innerBox'>
-    <Topcard color='hsl(43, 84%, 65%)' />
-   <Card text='2hrs' color='pink' />
-  </div>
+    )) 
+  }
    </div>
     </div>
   )

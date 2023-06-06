@@ -1,5 +1,5 @@
 import React from 'react'
-function Card({text}) {
+function Card({item, action}) {
  
 
   return (
@@ -9,12 +9,12 @@ function Card({text}) {
             
         }}>
             <div className='top'>
-                <span className='titleSpan'>work</span> 
+                <span className='titleSpan'>{item.title}</span> 
                 <span className='dots'>...</span> 
                 
             </div>
             <div className='timeDateDiv'>
-                    <h1 className='nums'>{text}</h1>
+                    <h1 className='nums'>{action}</h1>
                     
                 </div>
             <div className='lastSpanDiv'>
